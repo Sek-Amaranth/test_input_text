@@ -15,7 +15,7 @@ except Exception as e:
     st.stop()
 
 # สร้าง DataFrame
-df = pd.DataFrame(data, columns=["Timestamp", "Name", "Email"])  # ตั้งชื่อคอลัมน์ตาม sheet
+df = pd.DataFrame(data, columns=["Timestamp", "Name", "Email", "Work", "Status", "Remark"])  # ตั้งชื่อคอลัมน์ตาม sheet
 
 # === แสดงข้อมูลแบบแบ่งหน้า ===
 items_per_page = 10
