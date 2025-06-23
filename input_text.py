@@ -4,7 +4,7 @@ import pandas as pd
 import math
 
 # === URL ของ Web App จาก Google Apps Script ===
-URL = "https://script.google.com/macros/s/AKfycbygM5-N-3AaRlhPAeTFTIg8by8SexWjc877wazvLyi63KuGzqmPlqSY-iU12DYhGCd8/exec"  # ใส่ของคุณตรงนี้
+URL = "https://script.google.com/macros/s/AKfycbxrNH8T-D-Fkwphrpy9TQQfJCxPsP7Du-bIbztjgiLVt6QXZEWxX7GCMKOxD8U_PTgitQ/exec"  # ใส่ของคุณตรงนี้
 
 # ดึงข้อมูล
 try:
@@ -15,7 +15,7 @@ except Exception as e:
     st.stop()
 
 # สร้าง DataFrame
-df = pd.DataFrame(data, columns=["Timestamp", "Name", "Dpt.", "Detail", "Status", "Remark"])  # ตั้งชื่อคอลัมน์ตาม sheet
+df = pd.DataFrame(data, columns=["Timestamp", "Name", "Email"])  # ตั้งชื่อคอลัมน์ตาม sheet
 
 # === แสดงข้อมูลแบบแบ่งหน้า ===
 items_per_page = 10
