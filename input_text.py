@@ -11,7 +11,7 @@ submit = st.button("ส่ง")
 # === ส่งข้อมูลไป Google Apps Script ===
 if submit:
     if name and email:
-        url = "https://script.google.com/macros/s/xxxxxxxxxxxx/exec"  # ใส่ URL Web App ที่ได้
+        url = "https://script.google.com/macros/s/AKfycbxrNH8T-D-Fkwphrpy9TQQfJCxPsP7Du-bIbztjgiLVt6QXZEWxX7GCMKOxD8U_PTgitQ/exec"  # ใส่ URL Web App ที่ได้
         payload = {"name": name, "email": email}
         try:
             res = requests.post(url, json=payload)
