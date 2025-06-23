@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 
 # === UI Streamlit ===
-st.title("ส่งข้อมูลไป Google Sheet")
+st.title("ระบบ ส่งข้อมูลไป Google Sheet")
 
 name = st.text_input("ชื่อ")
 email = st.text_input("อีเมล")
